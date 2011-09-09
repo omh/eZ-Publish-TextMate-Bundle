@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>ezini( '${1:section}', '${2:variable}', '${0:ini file}' )</string>
+	<key>name</key>
+	<string>ezini</string>
+	<key>tabTrigger</key>
+	<string>ezini</string>
+	<key>uuid</key>
+	<string>39547624-14D4-441D-9CC6-84ACDB92DA90</string>
+</dict>
+</plist>

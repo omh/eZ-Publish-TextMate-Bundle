@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{node_view_gui content_node=$${1:attribute} ${0:&lt;additional arguments...&gt;}}</string>
+	<key>name</key>
+	<string>node view gui</string>
+	<key>scope</key>
+	<string>source.eztpl</string>
+	<key>tabTrigger</key>
+	<string>nodev</string>
+	<key>uuid</key>
+	<string>B4A71F50-8D4F-4307-9539-A7AF0B0C16FB</string>
+</dict>
+</plist>

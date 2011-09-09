@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>fetch_alias( ${1:alias}, hash( ${0:arguments ...} ) )</string>
+	<key>name</key>
+	<string>fetch alias</string>
+	<key>tabTrigger</key>
+	<string>fetcha</string>
+	<key>uuid</key>
+	<string>B325979D-B704-41D9-BB62-34F2F2CB32BB</string>
+</dict>
+</plist>

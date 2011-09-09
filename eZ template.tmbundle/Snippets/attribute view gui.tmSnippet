@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>{attribute_view_gui attribute=$${1:attribute} ${0:&lt;additional arguments...&gt;}}</string>
+	<key>name</key>
+	<string>attribute view gui</string>
+	<key>tabTrigger</key>
+	<string>attrv</string>
+	<key>uuid</key>
+	<string>C505DB9C-1ACF-4B2E-BA1E-503F8FA8B5C0</string>
+</dict>
+</plist>

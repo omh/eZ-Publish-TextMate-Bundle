@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+FILEPATH="$TM_FILEPATH"
+FILENAME=`basename -s ".tpl" $FILEPATH`
+DIRNAME=`dirname $FILEPATH`
+# Add a space between every directory so we can traverse it
+FILEPATH=`echo $FILEPATH|sed -e "s/\//\/ /g"`
+
+prevdir=""
+vardir=""
+# traverse path
+for dir in $FILEPATH; do
+    # we'll traverse the path looking for the ezp root directory.
+    # This is done by looking for ezpublish.cron and access.php inside a directory. If found
+    # it is very likely that the directory is an ezp installation.
+    result=`ls ${prevdir}${dir}ezpublish.cron ${prevdir}${dir}access.php 2&gt;&gt; /dev/null`
+    exit_status=$?
+
+    # if exist_status is 0 then we found our ez publish root directory
+    if [ $exit_status == 0 ]; then
+        vardir="${prevdir}${dir}var"
+	   echo "Clearing ini cache..."
+        cd "${prevdir}${dir}" &amp;&amp; bin/shell/clearcache.sh
+        break
+    fi
+    prevdir="${prevdir}${dir}"
+done</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>@C</string>
+	<key>name</key>
+	<string>Clear ini cache</string>
+	<key>output</key>
+	<string>showAsTooltip</string>
+	<key>scope</key>
+	<string>text.ini</string>
+	<key>uuid</key>
+	<string>2699C5B0-D1DE-4A75-B966-56ADBCEFB187</string>
+</dict>
+</plist>
